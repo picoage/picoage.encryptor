@@ -1,0 +1,9 @@
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\bin\Debug\netstandard2.0\Picoage.Encryptor.deps.json
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\bin\Debug\netstandard2.0\Picoage.Encryptor.dll
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\bin\Debug\netstandard2.0\Picoage.Encryptor.pdb
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.csprojAssemblyReference.cache
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.csproj.CoreCompileInputs.cache
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.AssemblyInfoInputs.cache
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.AssemblyInfo.cs
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.dll
+C:\Users\micro\source\repos\Picoage.Encryptor\src\Picoage.Encryptor\obj\Debug\netstandard2.0\Picoage.Encryptor.pdb
