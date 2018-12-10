@@ -3,3 +3,4 @@
 ################################################################################
 
 /Picoage.Encryptor.Tests/bin/Debug/netcoreapp2.1
+/src/Picoage.Encryptor/bin/Debug/netstandard2.0

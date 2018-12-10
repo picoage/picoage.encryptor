@@ -14,8 +14,8 @@ namespace Picoage.Encryptor.Tests
             string name = "Password";
 
             //Act
-            string chiperText = EncryptorText.EncryptPlainText(key, iv, name);
-            string plainText = EncryptorText.DecryptChiperText(key, iv, chiperText);
+            string chiperText = TextEncryptor.EncryptPlainText(key, iv, name);
+            string plainText = TextEncryptor.DecryptChiperText(key, iv, chiperText);
 
             //Assert
             Assert.AreEqual(name, plainText); 

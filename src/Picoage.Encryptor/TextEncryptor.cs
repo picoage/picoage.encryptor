@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Picoage.Encryptor
 {
-    public static class EncryptorText
+    public static class TextEncryptor
     {
         public static string EncryptPlainText(byte[] key, byte[] iv, string value)
         {
