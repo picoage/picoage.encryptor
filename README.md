@@ -1,1 +1,1 @@
-[![Build status](https://microsophtdeveloper.visualstudio.com/GitHub_Picoage_encryptor/_apis/build/status/GitHub_Picoage_encryptor-ASP.NET%20Core-CI)](https://microsophtdeveloper.visualstudio.com/GitHub_Picoage_encryptor/_build/latest?definitionId=22)
+[![Build status](https://microsophtdeveloper.visualstudio.com/GitHub_Picoage_encryptor/_apis/build/status/GitHub_Picoage_encryptor-ASP.NET%20Core%20(.NET%20Framework)-CI)](https://microsophtdeveloper.visualstudio.com/GitHub_Picoage_encryptor/_build/latest?definitionId=23)
