@@ -10,10 +10,13 @@ namespace Picoage.Encryptor
     {
         public static string EncryptPlainText(byte[] key, byte[] iv, string value)
         {
+            if (key == null) throw new EncryptorExpection("Key is null", new ArgumentNullException());
+            
             if(key==null || iv== null|| string.IsNullOrEmpty(value))
             {
                 throw new ArgumentException("Invalid Argument");
             }
+
             byte[] plainTextInBytes = Encoding.UTF8.GetBytes(value);
 
             using (Aes algorithm = Aes.Create())
