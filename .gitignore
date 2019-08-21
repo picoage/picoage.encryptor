@@ -4,3 +4,7 @@
 
 /Picoage.Encryptor.Tests/bin/Debug/netcoreapp2.1
 /src/Picoage.Encryptor/bin/Debug/netstandard2.0
+/src/Picoage.Encryptor/obj
+/.vs
+/Picoage.Encryptor.Tests/obj
+/src/Picoage.Encryptor/obj
