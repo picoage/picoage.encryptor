@@ -10,13 +10,12 @@ namespace Picoage.Encryptor
     {
         public static string EncryptPlainText(byte[] key, byte[] iv, string value)
         {
-            if (key == null) throw new EncryptorExpection("Key is null", new ArgumentNullException());
-            
-            if(key==null || iv== null|| string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentException("Invalid Argument");
-            }
+            if (key == null) throw new EncryptorExpection("Key cannot be null");
 
+            if (iv == null) throw new EncryptorExpection("Initialization vector cannot be null");
+
+            if (string.IsNullOrEmpty(value)) throw new EncryptorExpection("Value cannot be null or empty"); 
+            
             byte[] plainTextInBytes = Encoding.UTF8.GetBytes(value);
 
             using (Aes algorithm = Aes.Create())
@@ -30,6 +29,12 @@ namespace Picoage.Encryptor
 
         public static string DecryptChiperText(byte[] key, byte[] iv, string chiperText)
         {
+            if (key == null) throw new EncryptorExpection("Key cannot be null");
+
+            if (iv == null) throw new EncryptorExpection("Initialization vector cannot be null");
+
+            if (string.IsNullOrEmpty(chiperText)) throw new EncryptorExpection("Chipertext cannot be null or empty");
+
             byte[] chiperTextInBytes = Convert.FromBase64String(chiperText);
             using (Aes algorithm = Aes.Create())
             {

@@ -4,10 +4,10 @@ using System;
 namespace Picoage.Encryptor.Tests
 {
     [TestClass]
-    public class EncryptorTextTests
+    public class EncryptPlainTextTests
     {
         [TestMethod]
-        public void When_KeyIsNull_Then_ArgumentExceptionIsThrownWith_InvalidArgumentMessage()
+        public void When_KeyIsNull_Then_EncryptorExceptionIsThrown_With_KeycannotbenullMessage()
         {
             //Arrange 
             byte[] key = null;
@@ -22,12 +22,14 @@ namespace Picoage.Encryptor.Tests
             catch (Exception ex)
             {
                 //Assert
-                Assert.AreEqual("Key is null", ex.Message);
+                bool exceptiontype = ex is EncryptorExpection;
+                Assert.IsTrue(exceptiontype);
+                Assert.AreEqual("Key cannot be null", ex.Message);
             }
         }
 
         [TestMethod]
-        public void When_IvIsNull_Then_ArgumentExceptionIsThrownWith_InvalidArgumentMessage()
+        public void When_IvIsNull_Then_ArgumentExceptionIsThrownWith_InitializationVectorCannotBeNull()
         {
             //Arrange 
             byte[] key = { 145, 12, 32, 245, 98, 132, 98, 214, 6, 77, 131, 44, 221, 3, 9, 50 };
@@ -42,12 +44,14 @@ namespace Picoage.Encryptor.Tests
             catch (Exception ex)
             {
                 //Assert
-                Assert.AreEqual(ex.Message, "Invalid Argument");
+                bool exceptiontype = ex is EncryptorExpection;
+                Assert.IsTrue(exceptiontype);
+                Assert.AreEqual(ex.Message, "Initialization vector cannot be null");
             }
         }
 
         [TestMethod]
-        public void When_ValueIsNull_Then_ArgumentExceptionIsThrownWith_InvalidArgumentMessage()
+        public void When_ValueIsNull_Then_ArgumentExceptionIsThrownWith_ValuecannotbenulloremptyMessage()
         {
             //Arrange 
             byte[] key = { 145, 12, 32, 245, 98, 132, 98, 214, 6, 77, 131, 44, 221, 3, 9, 50 };
@@ -62,7 +66,9 @@ namespace Picoage.Encryptor.Tests
             catch (Exception ex)
             {
                 //Assert
-                Assert.AreEqual(ex.Message, "Invalid Argument");
+                bool exceptiontype = ex is EncryptorExpection;
+                Assert.IsTrue(exceptiontype);
+                Assert.AreEqual(ex.Message, "Value cannot be null or empty");
             }
         }
 
